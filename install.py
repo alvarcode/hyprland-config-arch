@@ -1,41 +1,54 @@
 #!/usr/bin/env python
 import os
+from os import path
+import subprocess
 import sys
 
-
-def render_progress(value):
+def render_bar(value):
     sys.stdout.write("\033[s")
     sys.stdout.flush()
 
-    progress = value / len(dir)
-    pgs_bar = f"\033[95m{'━' * int(progress * 40)}"
-    print(f"  {pgs_bar}\033[35m{'━' * (40 - len(pgs_bar))}\033[0m (progreso: {progress * 100}%)")
+    progress = round(value / len(content) * 100)
+    bar = f"\033[95m{'━' * (progress / 100 * BAR_WIDTH)}"
+    bar += f"\033[35m{'━' * (BAR_WIDTH - len(bar))}"
+    print(f"  {bar}\033[0m ({progress}%)")
 
     sys.stdout.write("\033[u")
     sys.stdout.flush()
-                                             
 
-print("Instalador de configuración Hyprland\n")
-
-ignore = [ ".git", "install.py" ]
 
 HOME = os.getenv("HOME")
-dir = os.listdir("./")
+BAR_WIDTH = 40
+content = os.listdir("./")
+ignore = [ ".git", "install.py" ]
 
-for item in ignore: dir.remove(item)
+print("El script modificará y sobreescrirá archivos para aplicar la configuración correctamente.")
+if input("¿Desea continuar? (s/n): ") not in ('', 's', 'S'): exit()
 
-for idx, item in enumerate(dir):
-    render_progress(idx + 1)
-    cmd = "./" + item
+print(f"\n\033[32m=>\033[0m Instalando configuración en \033[94{HOME}\033[0m ...\n")
 
-    if os.path.isdir(cmd):
-        if not os.path.exists(f"{HOME}/{item}"):
-            os.system(f"mkdir {HOME}/{item}")
-        cmd = " -r " + cmd
+for item in content:
+    if item in ignore:
+        content.remove(item)
+        ignore.remove(item)
 
-    cmd = f"cp {cmd} {HOME}/"
-    os.system(cmd)
+        if len(ignore) == 0: break
 
-sys.stdout.write("\033[2B")
-sys.stdout.flush()
-print("Configuración aplicada correctamente! \033[32m \033[0m")
+for i, item in enumerate(content):
+    render_bar(i)
+
+    src = "./" + item
+    if path.isdir(src):
+        src = "-r " + src
+
+    result = subprocess.run(["cp", src, str(HOME)], capture_output=True, text=True)
+
+    if result.returncode != 0:
+        print("Ocurrió un error al instalar la configuración :(")
+        print("\nError: " + result.stderr)
+        exit()
+
+print("\033[32 \033[0mconfiguración aplicada correctamente!")
+
+
+    
