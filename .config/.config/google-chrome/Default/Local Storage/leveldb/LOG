@@ -1,0 +1,8 @@
+2025/03/21-22:01:14.420 4 Creating DB /home/alvarcode/.config/google-chrome/Default/Local Storage/leveldb since it was missing.
+2025/03/21-22:01:14.776 4 Reusing MANIFEST /home/alvarcode/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/21-23:21:50.282 5 Level-0 table #5: started
+2025/03/21-23:21:50.379 5 Level-0 table #5: 69871 bytes OK
+2025/03/21-23:21:50.431 5 Delete type=0 #3
+2025/03/22-00:43:11.951 5 Level-0 table #7: started
+2025/03/22-00:43:12.033 5 Level-0 table #7: 106186 bytes OK
+2025/03/22-00:43:12.082 5 Delete type=0 #4

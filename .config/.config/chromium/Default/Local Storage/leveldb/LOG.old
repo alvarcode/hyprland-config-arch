@@ -1,0 +1,27 @@
+2025/03/06-08:57:02.838 4 Reusing MANIFEST /home/alvarcode/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/06-08:57:02.877 4 Recovering log #4
+2025/03/06-08:57:03.074 4 Reusing old log /home/alvarcode/.config/chromium/Default/Local Storage/leveldb/000004.log 
+2025/03/06-08:58:50.929 5 Level-0 table #8: started
+2025/03/06-08:58:50.973 5 Level-0 table #8: 57698 bytes OK
+2025/03/06-08:58:51.023 5 Delete type=0 #4
+2025/03/06-09:21:07.653 5 Level-0 table #10: started
+2025/03/06-09:21:07.916 5 Level-0 table #10: 35670 bytes OK
+2025/03/06-09:21:07.958 5 Delete type=0 #7
+2025/03/06-09:46:04.887 5 Level-0 table #12: started
+2025/03/06-09:46:04.966 5 Level-0 table #12: 95674 bytes OK
+2025/03/06-09:46:05.014 5 Delete type=0 #9
+2025/03/06-09:46:54.916 5 Level-0 table #14: started
+2025/03/06-09:46:55.000 5 Level-0 table #14: 59233 bytes OK
+2025/03/06-09:46:55.085 5 Delete type=0 #11
+2025/03/06-09:51:42.503 5 Level-0 table #16: started
+2025/03/06-09:51:42.569 5 Level-0 table #16: 34709 bytes OK
+2025/03/06-09:51:42.621 5 Delete type=0 #13
+2025/03/06-09:51:42.622 5 Compacting 4@0 + 1@1 files
+2025/03/06-09:51:42.670 5 Generated table #17@0: 53 keys, 98432 bytes
+2025/03/06-09:51:42.670 5 Compacted 4@0 + 1@1 files => 98432 bytes
+2025/03/06-09:51:42.718 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/06-09:51:42.719 5 Delete type=2 #8
+2025/03/06-09:51:42.719 5 Delete type=2 #14
+2025/03/06-09:51:42.719 5 Delete type=2 #10
+2025/03/06-09:51:42.719 5 Delete type=2 #16
+2025/03/06-09:51:42.719 5 Delete type=2 #12

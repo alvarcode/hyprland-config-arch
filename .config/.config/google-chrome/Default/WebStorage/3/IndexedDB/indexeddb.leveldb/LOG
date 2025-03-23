@@ -1,0 +1,6 @@
+2025/03/21-23:47:09.692 ed05 Creating DB /home/alvarcode/.config/google-chrome/Default/WebStorage/3/IndexedDB/indexeddb.leveldb since it was missing.
+2025/03/21-23:47:09.815 ed05 Reusing MANIFEST /home/alvarcode/.config/google-chrome/Default/WebStorage/3/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/03/21-23:57:12.448 ed04 Level-0 table #5: started
+2025/03/21-23:57:12.492 ed04 Level-0 table #5: 4234 bytes OK
+2025/03/21-23:57:12.542 ed04 Delete type=0 #3
+2025/03/21-23:57:12.543 ed04 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

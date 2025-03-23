@@ -1,0 +1,9 @@
+2025/03/21-20:29:16.354 4 Reusing MANIFEST /home/alvarcode/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/21-20:29:16.363 4 Recovering log #15
+2025/03/21-20:29:16.364 4 Reusing old log /home/alvarcode/.config/chromium/Default/Local Storage/leveldb/000015.log 
+2025/03/21-20:34:27.438 5 Level-0 table #20: started
+2025/03/21-20:34:27.500 5 Level-0 table #20: 33790 bytes OK
+2025/03/21-20:34:27.544 5 Delete type=0 #15
+2025/03/21-20:47:55.727 5 Level-0 table #22: started
+2025/03/21-20:47:55.858 5 Level-0 table #22: 97215 bytes OK
+2025/03/21-20:47:55.903 5 Delete type=0 #19
