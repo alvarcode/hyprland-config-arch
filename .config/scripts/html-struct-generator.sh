@@ -24,11 +24,11 @@ fi
 if [ ! -f "$filename" ]; then
 	echo "El archivo no existe"
 	exit 1
-elif [ ${filename:-5} != ".html" ]; then
+elif [ ${filename: -5} != ".html" ]; then
 	echo "El archivo '$filename' no es un archivo HTML"
 	exit 1
 fi
-	
-cp ./templates/basic-struct.html "$filename"
+
+cp $HOME/.config/scripts/templates/basic-struct.html "$filename"
 echo "󰗠 Plantilla aplicada correctamente!"
 

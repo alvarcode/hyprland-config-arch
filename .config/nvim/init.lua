@@ -13,7 +13,9 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find f
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-    vim.keymap.set('n', '<leader>t', ':!alacritty &<CR>', { noremap = true })
+vim.keymap.set('x', '<leader>t', ':!alacritty &<CR>', { noremap = true })
+vim.keymap.set('v', '<leader>cs', ':CodeSnap<CR>', { desc = "Save selected code snapshot into clipboard" })
+vim.keymap.set('v', '<leader>csh', ':CodeSnapHighlight<CR>', { desc = "Save selected code snapshot into clipboard" })
 
 vim.api.nvim_create_user_command(
 	'Html5',
