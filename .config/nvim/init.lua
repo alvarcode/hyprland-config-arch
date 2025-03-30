@@ -7,6 +7,8 @@ vim.cmd("colorscheme catppuccin")
 vim.filetype.add({
   pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
+vim.cmd.highlight('IndentLine guifg=#555b61')
+vim.cmd.highlight('IndentLineCurrent guifg=#b86efe')
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
